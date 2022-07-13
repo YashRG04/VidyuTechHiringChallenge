@@ -1,0 +1,35 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  background: #9796f0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fbc7d4,
+    #9796f0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 8px solid rgba(8, 74, 228, 0.719);
+
+  border-radius: 50%;
+
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

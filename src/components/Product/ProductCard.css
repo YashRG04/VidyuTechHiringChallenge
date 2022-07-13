@@ -1,0 +1,120 @@
+.productCard {
+  width: 15vmax;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  margin: 2vmax;
+  transition: all 0.5s;
+
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.4);
+  padding: 0rem 1rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentContainer > p > span {
+  font: 0.8rem "Roboto";
+  color: tomato;
+}
+
+.imagesContainer {
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  margin: 0;
+}
+
+.productCard > div > img {
+  width: 11vmax;
+  padding: 3vmax 3vmax 1vmax;
+}
+
+.productCard > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ratingsContainer {
+  width: 12vmax;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  margin: 0.5rem 0 0.3rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+.productCardSpan {
+  margin: 0.3vmax;
+  font: 300 0.7vmax "Roboto";
+}
+
+.productCard > div > p {
+  font-family: "Roboto";
+  font-size: 0.9vmax;
+  line-height: 155%;
+  margin: 1vmax 0;
+  margin-bottom: 0;
+}
+
+.productCard > div > span {
+  margin: 0.5vmax;
+  color: tomato;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1vmax;
+}
+
+.productCard:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+@media screen and (max-width: 600px) {
+  .productCard {
+    width: 25vmax;
+  }
+  .productCard > div > p {
+    font-size: 2vmax;
+  }
+
+  .productCard > div > p > span {
+    font-size: 1.8vmax;
+  }
+
+  .productCard > div > div {
+    margin: 0vmax;
+  }
+
+  .productCard > div > img {
+    width: 21vmax;
+    padding: 3vmax 4vmax 1vmax;
+  }
+
+  .ratingsContainer {
+    width: 25vmax;
+    margin: 0.8rem 0 0.5rem;
+  }
+
+  .productCard > div > div > span {
+    margin: 0 0.5vmax;
+    font: 300 2vmax "Roboto";
+  }
+
+  .productCard > div > span {
+    font-size: 2.5vmax;
+  }
+
+}
